@@ -2,107 +2,111 @@
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: "Manrope", sans-serif;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
 }
 
-/* Nav Bar */
+
+header {
+  background-color:  #fed2aa;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #915b50;
+  text-decoration: none;
+}
+
 .navbar {
+  min-height: 3.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fed2aa;
-  color: #915b50;
-  padding: 0;
+  padding: 0 1.25rem;
 }
 
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.75rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: #85d7a3;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 1.5rem;
+  height: 0.2rem;
+  margin: 0.3rem auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #915b50;
+}
+
+/* nav bar logo */
 .karibara-logo {
   width: 35px;
   height: 35px;
   margin: 0.5rem 1rem;
-
 }
 
-.navbar-links ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
+@media (max-width: 768px) {
+  .hamburger{
+    display: block;
+  }
 
-.navbar-links li {
-  list-style: none;
-}
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-.navbar-links li a {
-  text-decoration: none;
-  color: #915b50;
-  padding: 1rem;
-  display: block;
-}
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(0.5rem) rotate(45deg);
+  }
 
-.navbar-links li:hover {
-  background-color: #fec29d;
-}
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-0.5rem) rotate(-45deg);
+  }
 
-.toggle-button {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 22px;
-}
+  .nav-menu {
+    position: fixed;
+    /* menu shows up after 0.3s from the left */
+    left: -100%;
+    transition: 0.3s;
 
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: #915b50;
-  border-radius: 10px;
-}
+    top:3.5rem;
+    gap: 0;
+    flex-direction: column;
 
-@media (max-width: 600px) {
-    .toggle-button {
-        display: flex;
-    }
+    /* here to change color to glass effect - later */
+    background-color: #fed2aa;
+    width: 100%;
+    text-align: center;
+  }
 
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
+  .nav-item {
+    margin: 1rem 0;
+  }
 
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .nav-menu.active {
+    left:0;
 
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar-links ul li {
-        text-align: right;
-    }
-
-    .navbar-links ul li a {
-        padding: 0.5rem 1rem;
-    }
-
-    .navbar-links .active {
-        display: flex;
-    }
+  }
 }
 
 /* Footer */
@@ -127,3 +131,11 @@ footer {
 .font-anchor {
   text-decoration: none;
 }
+
+
+
+
+
+
+
+
