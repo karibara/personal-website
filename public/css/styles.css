@@ -7,6 +7,9 @@
   font-family: "Manrope", sans-serif;
 }
 
+body {
+  background-color: #FFE8AD;
+}
 
 header {
   background-color:  #fed2aa;
@@ -21,6 +24,20 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  color: #94B49F;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: #94B49F;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+
+/* nav bar */
 .navbar {
   min-height: 3.5rem;
   display: flex;
@@ -66,6 +83,7 @@ a {
   margin: 0.5rem 1rem;
 }
 
+/* nav bar RWD */
 @media (max-width: 768px) {
   .hamburger{
     display: block;
@@ -106,6 +124,22 @@ a {
   .nav-menu.active {
     left:0;
 
+  }
+}
+
+/* BODY */
+.container {
+  margin-top: 6.5rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.25;
   }
 }
 
