@@ -2,58 +2,92 @@
 <title>Karibara - official website
 </title>
 </head>
+
 <body>
 
-    <header>
-        <nav class="navbar">
-            <!-- branding -->
-           <a href="#">
-            <img class="karibara-logo" src="/images/karibara_logo_02.png" alt="karibara logo">
-           </a> 
-    
-           <!-- list menu -->
-           <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="#" class="nav-link">ABOUT</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">SKILLS</a>
-            </li><li class="nav-item">
-                <a href="#" class="nav-link">PROJECTS</a>
-            </li><li class="nav-item">
-                <a href="#" class="nav-link">CONTACT</a>
-            </li>
-           </ul>
-    
-           <!-- hamburger -->
-           <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-           </div>
-        </nav>
-    </header>
- 
-<!-- main container -->
-<div class="container">
+  <header>
+    <nav class="navbar">
+      <!-- branding -->
+      <a href="#">
+        <img class="karibara-logo" src="/images/karibara_logo_02.png" alt="karibara logo">
+      </a>
 
-    <div class="row">
-        <div class="col-md-12 d-flex justify-content">
+      <!-- list menu -->
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">SKILLS</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">PROJECTS</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">CONTACT</a>
+        </li>
+      </ul>
 
-            <div class="welcome-header">
-                <h1>
-                    Hi, I'm Małgorzata.
-                </h1>
-                <h3>
-                    Nice to meet you.
-                </h3>
-                <h3>
-                    I am a designer & aspiring frontend developer.
-                </h3>
-            </div>
-            
+      <!-- hamburger -->
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- main container -->
+  <div class="container main-padding">
+
+    <!-- welcome header -->
+    <div class="row mt-5 ">
+      <div class="col ">
+        <h1>
+          Hi, I'm Małgorzata.
+        </h1>
+      </div>
+    </div>
+
+    <div class="row mt-5 ">
+        <div class="col">
+            <h3>
+                Nice to meet you.
+            </h3>
         </div>
-    </div>    
-    
+    </div>
+
+    <div class="row pb-5">
+        <div class="col">
+            <h3>
+                I am a designer & aspiring frontend developer.
+            </h3>
+        </div>
+    </div>
+
+<!-- about me card -->
+<div class="card glass-card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+                <img class="profile-img" src="/images/profile-photo.png" alt="profile photo" srcset="">
+            </div>
+            <div class="col">
+                <h2 class="card-title">About me</h2>
+                <p class="card-text">
+                    I am a master of art design and engineer [interior design] with more than ten years of experience as a designer.
+                </p>
+                <p class="card-text">
+                    I translate people needs into design solutions, by understanding the impact takt good design can have on our lives.
+                </p>
+            </div>
+        </div>
+       
+        
+    </div>
 </div>
-<%- include("footer") -%>
+
+
+
+  </div>
+  <%- include("footer") -%>
