@@ -20,13 +20,18 @@ li {
 }
 
 a {
-  color: #915b50;
+  /* color: #915b50; */
   text-decoration: none;
 }
 
 h1 {
   color: #94B49F;
   font-size: 4rem;
+  font-weight: 600;
+}
+
+h2 {
+  color: #DF7861;
   font-weight: 600;
 }
 
@@ -147,8 +152,17 @@ h3 {
   }
 
   .main-padding {
-    padding: 0 0;
+    padding: 1rem;
   }
+ 
+  .card-title {
+    text-align: center;
+  }
+  
+  .btn-cv {
+    margin: 0 auto 0 auto;
+  }
+
 }
 
 .welcome-header {
@@ -156,17 +170,47 @@ h3 {
 }
 
 
-.profile-img{
-  width: 10rem;
-  height: 10rem;
-  
-}
 /* glass-card*/
 .glass-card {
-  background-color: #85d7a3;
-  color: #915B50;
-  padding: 10rem 6rem;
+  background: hsl(0 0% 100% / 0.1);
+  backdrop-filter: blur(1rem);
+  padding: 5rem 3rem;
+  border-color: #FFE8AD;
+  box-shadow: 1.3rem 1.3rem 1.3rem rgba(145, 91, 80, 0.1), 
+  -1.3rem -1.3rem 1.3rem rgba(239, 218, 183, 0.2);
+  border-radius: 1.5rem;
 }
+
+.card-text {
+  color: #915B50;
+}
+
+.profile-img{
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* my resumee button */
+.btn-cv {
+  border-radius: 25px;
+  background-color: #B9CCB8;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-cv:hover {
+  background-color: #94B49F;
+}
+
+.anchor-cv {
+  color: #080808;
+}
+
+.anchor-cv:hover {
+  color: #030303;
+}
+
 
 /* Footer */
 footer {
