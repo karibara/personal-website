@@ -8,11 +8,11 @@
 }
 
 body {
-  background-color: #FFE8AD;
+  background-color: #ffe8ad;
 }
 
 header {
-  background-color:  #fed2aa;
+  background-color: #fed2aa;
 }
 
 li {
@@ -25,22 +25,21 @@ a {
 }
 
 h1 {
-  color: #94B49F;
+  color: #94b49f;
   font-size: 4rem;
   font-weight: 600;
 }
 
 h2 {
-  color: #DF7861;
+  color: #df7861;
   font-weight: 600;
 }
 
 h3 {
-  color: #94B49F;
+  color: #94b49f;
   font-size: 2rem;
   font-weight: 400;
 }
-
 
 /* nav bar */
 .navbar {
@@ -90,7 +89,7 @@ h3 {
 
 /* nav bar RWD */
 @media (max-width: 768px) {
-  .hamburger{
+  .hamburger {
     display: block;
   }
 
@@ -112,12 +111,19 @@ h3 {
     left: -100%;
     transition: 0.3s;
 
-    top:3.5rem;
+    top: 3.5rem;
     gap: 0;
     flex-direction: column;
 
     /* here to change color to glass effect - later */
+    /* background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
+    
+    border-color: #ffe8ad;
+    box-shadow: 1.3rem 0 1.3rem rgba(145, 91, 80, 0.1), */
+      
     background-color: #fed2aa;
+
     width: 100%;
     text-align: center;
   }
@@ -127,8 +133,7 @@ h3 {
   }
 
   .nav-menu.active {
-    left:0;
-
+    left: 0;
   }
 }
 
@@ -140,7 +145,7 @@ h3 {
 .main-padding {
   padding: 0 15%;
 }
- 
+
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
@@ -154,38 +159,40 @@ h3 {
   .main-padding {
     padding: 1rem;
   }
- 
+
   .card-title {
     text-align: center;
   }
-  
+
   .btn-cv {
     margin: 0 auto 0 auto;
   }
-
+  .div-cv {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 .welcome-header {
   padding: 10% 20%;
 }
 
-
 /* glass-card*/
 .glass-card {
   background: hsl(0 0% 100% / 0.1);
   backdrop-filter: blur(1rem);
   padding: 5rem 3rem;
-  border-color: #FFE8AD;
-  box-shadow: 1.3rem 1.3rem 1.3rem rgba(145, 91, 80, 0.1), 
-  -1.3rem -1.3rem 1.3rem rgba(239, 218, 183, 0.2);
+  border-color: #ffe8ad;
+  box-shadow: 1.3rem 1.3rem 1.3rem rgba(145, 91, 80, 0.1),
+    -1.3rem -1.3rem 1.3rem rgba(239, 218, 183, 0.2);
   border-radius: 1.5rem;
 }
 
 .card-text {
-  color: #915B50;
+  color: #915b50;
 }
 
-.profile-img{
+.profile-img {
   width: 8rem;
   height: 8rem;
   margin-bottom: 1.5rem;
@@ -194,13 +201,13 @@ h3 {
 /* my resumee button */
 .btn-cv {
   border-radius: 25px;
-  background-color: #B9CCB8;
+  background-color: #b9ccb8;
   color: white;
   font-weight: 600;
 }
 
 .btn-cv:hover {
-  background-color: #94B49F;
+  background-color: #94b49f;
 }
 
 .anchor-cv {
@@ -211,6 +218,9 @@ h3 {
   color: #030303;
 }
 
+.div-cv {
+  padding-left: 6%;
+}
 
 /* Footer */
 footer {
@@ -233,11 +243,3 @@ footer {
 .font-anchor {
   text-decoration: none;
 }
-
-
-
-
-
-
-
-
