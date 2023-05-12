@@ -41,6 +41,7 @@ h3 {
   font-weight: 400;
 }
 
+
 /* nav bar */
 .navbar {
   min-height: 3.5rem;
@@ -48,6 +49,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 0 1.25rem;
+  background-color: #fed2aa;
 }
 
 .nav-menu {
@@ -116,16 +118,12 @@ h3 {
     flex-direction: column;
 
     /* here to change color to glass effect - later */
-    /* background: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(1rem);
-    
-    border-color: #ffe8ad;
-    box-shadow: 1.3rem 0 1.3rem rgba(145, 91, 80, 0.1), */
-      
-    background-color: #fed2aa;
+    background: rgba(254, 210, 170, 0.5);
+    backdrop-filter: blur(0.5rem);
 
     width: 100%;
     text-align: center;
+
   }
 
   .nav-item {
@@ -137,10 +135,15 @@ h3 {
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
 /* BODY */
-/* .container {
-  margin: 6.5rem auto 0 auto;
-} */
+
 
 .main-padding {
   padding: 0 15%;
@@ -174,7 +177,7 @@ h3 {
 }
 
 .welcome-header {
-  padding: 10% 20%;
+  padding-top: 30%;
 }
 
 /* glass-card*/
@@ -243,3 +246,6 @@ footer {
 .font-anchor {
   text-decoration: none;
 }
+
+
+
