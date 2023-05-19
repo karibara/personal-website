@@ -6,7 +6,7 @@
 <body>
 
   <header>
-    <nav class="navbar">
+    <nav class="navbar sticky">
       <!-- branding -->
       <a href="#">
         <img class="karibara-logo" src="/images/karibara_logo_02.png" alt="karibara logo">
@@ -41,7 +41,7 @@
   <div class="container main-padding">
 
     <!-- welcome header -->
-    <div class="row mt-5 ">
+    <div class="row welcome-header">
       <div class="col ">
         <h1>
           Hi, I'm Małgorzata.
@@ -93,7 +93,63 @@
       </div>
     </div>
 
+    <!-- Skills section -->
+    <div class="skills">
+      
+      <h2 class="skills-header">Skills</h2>
 
+      <div class="row">
+        
+        <!-- Frontend Developer Card -->
+        <div class="card glass-card col-m-4 ">
+          <img src="/images/code-screen.png" class="screen-png" alt="screen with code" srcset="">
+          <div class="card-body">
+            <div class="card-title card-skills-title">Frontend Developer</div>
+            <div class="card-text">
 
+              <div class="card-description mb-5">Everyday I learn something new.</div>
+              <ul>
+                <div class="row">
+                  <div class="col-6">
+                    <li>VSC</li>
+                    <li>Bootstrap</li>
+                    <li>DOM</li>
+                    <li>Node.js</li>
+                    <!-- here is place to add React skill in future -->
+                  </div>
+                  <div class="col-6">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java Script</li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Designer Card -->
+        <div class="card glass-card col-m-4 ">
+          <img src="/images/design-screen.png" class="screen-png" alt="screen with sketch" srcset="">
+          <div class="card-body">
+            <div class="card-title">Designer</div>
+            <div class="card-text">UX, UI, graphics, 3D modeling, digital painting</div>
+            <ul>
+              <li>Figma</li>
+              <li>Adobe [Ps, Ai, Id]</li>
+              <li>Affinity</li>
+              <li>Rhino + V-ray</li>
+              <li>Procreate</li>
+              <li>Revit</li>
+              <li>Pen & Paper</li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+      
+<!-- main container end tag div -->
   </div>
   <%- include("footer") -%>

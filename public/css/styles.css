@@ -195,6 +195,7 @@ h3 {
   color: #915b50;
 }
 
+
 .profile-img {
   width: 8rem;
   height: 8rem;
@@ -223,6 +224,30 @@ h3 {
 
 .div-cv {
   padding-left: 6%;
+}
+
+/* Skills Section */
+
+.skills-header {
+  text-align: center;
+  color: #6A8272;
+  
+}
+
+.screen-png {
+  width: 11rem;
+  margin: 0 auto 0 auto;
+}
+
+.card-skills-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #94b49f;
+  text-align: center;
+}
+
+.card-description {
+  text-align: center;
 }
 
 /* Footer */
