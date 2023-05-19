@@ -15,12 +15,8 @@ header {
   background-color: #fed2aa;
 }
 
-li {
-  list-style: none;
-}
 
 a {
-  /* color: #915b50; */
   text-decoration: none;
 }
 
@@ -59,8 +55,14 @@ h3 {
   gap: 3.75rem;
 }
 
+.nav-item {
+  list-style: none;
+}
+
 .nav-link {
   transition: 0.7s ease;
+  color: #915b50;
+
 }
 
 .nav-link:hover {
@@ -145,8 +147,8 @@ h3 {
 /* BODY */
 
 
-.main-padding {
-  padding: 0 15%;
+.main-margin {
+  margin: 0 15%;
 }
 
 @media (max-width: 768px) {
@@ -159,8 +161,8 @@ h3 {
     line-height: 1.25;
   }
 
-  .main-padding {
-    padding: 1rem;
+  .main-margin {
+    margin: 1rem;
   }
 
   .card-title {
@@ -180,16 +182,22 @@ h3 {
   padding-top: 30%;
 }
 
+/* ABOUT section */
+#about {
+  padding: 5rem 3rem;
+}
+
 /* glass-card*/
 .glass-card {
   background: hsl(0 0% 100% / 0.1);
   backdrop-filter: blur(1rem);
-  padding: 5rem 3rem;
   border-color: #ffe8ad;
   box-shadow: 1.3rem 1.3rem 1.3rem rgba(145, 91, 80, 0.1),
     -1.3rem -1.3rem 1.3rem rgba(239, 218, 183, 0.2);
   border-radius: 1.5rem;
+  padding: 0;
 }
+
 
 .card-text {
   color: #915b50;
@@ -226,29 +234,70 @@ h3 {
   padding-left: 6%;
 }
 
-/* Skills Section */
+/* SKILLS section */
+#skills {
+  background-color: #D4B5A260;
+  padding: 1rem 17%;
+}
+
+@media (max-width: 768px) {
+  #skills {
+    padding: 1rem;
+  }
+
+  .card-frontend {
+    margin-bottom: 2rem;
+  }
+}
+
+
+.skills-row {
+  margin:0;
+  justify-content: center;
+}
 
 .skills-header {
   text-align: center;
   color: #6A8272;
+  margin: 2rem auto 3rem auto;
   
 }
 
 .screen-png {
   width: 11rem;
+  margin: 1rem auto 0 auto;
+}
+
+.screen-div {
+  background-color: white;
+  padding: 0;
   margin: 0 auto 0 auto;
+  
+}
+
+.card-skills-header {
+  background-color: #f7efe4;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .card-skills-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #94b49f;
   text-align: center;
+  background-color: #f7efe4;
+  padding: 1rem 0 1rem 0;
 }
 
 .card-description {
   text-align: center;
+  margin-bottom: 1.5rem;
 }
+
+
 
 /* Footer */
 footer {
