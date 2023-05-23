@@ -185,6 +185,8 @@ h3 {
 /* ABOUT section */
 #about {
   padding: 5rem 3rem;
+  /* probably have to change this margin, when add desktop image */
+  margin-bottom: 3rem;
 }
 
 /* glass-card*/
@@ -237,8 +239,9 @@ h3 {
 /* SKILLS section */
 #skills {
   background-color: #D4B5A260;
-  padding: 1rem 17%;
+  padding: 1rem 15% 3rem;
 }
+
 
 @media (max-width: 768px) {
   #skills {
@@ -255,6 +258,8 @@ h3 {
   margin:0;
   justify-content: center;
 }
+
+
 
 .skills-header {
   text-align: center;
