@@ -151,7 +151,7 @@ h3 {
   margin: 0 15%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   h1 {
     font-size: 2rem;
   }
@@ -242,8 +242,17 @@ h3 {
   padding: 1rem 15% 3rem;
 }
 
+@media (max-width: 1200px) {
+  /* #skills {
+    padding: 1rem 17.5% 3rem;
+  } */
 
-@media (max-width: 768px) {
+  .card-frontend {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
   #skills {
     padding: 1rem;
   }
