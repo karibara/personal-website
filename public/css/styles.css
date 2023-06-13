@@ -340,14 +340,16 @@ h3 {
   background-color: #b9ccb8;
   color: #080808;
   font-weight: 600;
+  margin-top: 3%;
 }
 
-.a-active:visited {
-  color: #915b50;
+.a-contact:visited {
+  color: #344138;
 }
 
 .btn-contact:hover {
   background-color: #94b49f;
+  color: #f7efe4;
 }
 
 .contact-header {
@@ -368,11 +370,22 @@ h3 {
   background-size: cover;
   background-position: center;
   
-  padding-top: 30px;
-  padding-bottom: 270px;
+  padding-top: 10%;
+  padding-bottom: 20%;
+  
+/* previous settings of bg img desk */
+  /* padding-top: 40px;
+  padding-bottom: 270px; */
   
   border-style: none;
 }
+
+/* @media (min-width: 1441px) {
+  .bg-desk {
+    padding-top: 10%;
+    padding-bottom: 20%;
+  }
+  } */
 
 /* Footer */
 footer {
