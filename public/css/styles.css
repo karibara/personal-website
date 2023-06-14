@@ -188,6 +188,14 @@ h3 {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 992px) {
+  #about {
+    padding: 0.5rem 0.5rem;
+    
+    margin-bottom: 2rem;
+  }
+}
+
 /* glass-card*/
 .glass-card {
   background: hsl(0 0% 100% / 0.1);
