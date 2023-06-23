@@ -1,4 +1,4 @@
-let header = document.getElementById('skills');
+let skills = document.getElementById('skills');
 
 // this function change opacity of element while scrolling
 function fadeOutOnScroll(element) {
@@ -11,9 +11,10 @@ function fadeOutOnScroll(element) {
   let scrollTop = document.documentElement.scrollTop;
   
   let opacity = 1;
-  
+  let opacityMultiplyer = 1.2;
+
   if (scrollTop > distanceToTop) {
-    opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+    opacity = 1 - (scrollTop - distanceToTop)*opacityMultiplyer / elementHeight;
   }
   
   if (opacity >= 0) {
@@ -23,7 +24,7 @@ function fadeOutOnScroll(element) {
 
 // this runs everytime the user scrolls
 function scrollHandler() {
-  fadeOutOnScroll(header);
+  fadeOutOnScroll(skills);
 }
 
 window.addEventListener('scroll', scrollHandler);
