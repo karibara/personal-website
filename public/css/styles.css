@@ -271,11 +271,7 @@ h3 {
 }
 
 @media (max-width: 1200px) {
-  /* #skills {
-    padding: 1rem 17.5% 3rem;
-  } */
-
-  .card-frontend {
+   .card-frontend {
     margin-bottom: 2rem;
   }
 }
@@ -339,7 +335,7 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
-/* Projects Section */
+/* PROJECTS Section */
 #projects {
   list-style: none;
   padding: 0 10% 5%;
@@ -357,7 +353,7 @@ h3 {
 }
 }
 
-/* Projects hover effect */
+/* PROJECTS hover effect */
 
 a, a {
   position: relative;
@@ -391,7 +387,7 @@ a:hover {
 }
 
 
-/* Contact Section */
+/* CONTACT Section */
 #contact {
   text-align: center;
   color: #94B49F;
@@ -432,22 +428,16 @@ a:hover {
 
 /* Background image above the footer*/
 .bg-desk {
-  /* background-color: #915b50; */
   background-image: url(../images/bg-desk-closeup.png);
   background-size: cover;
   background-position: center;
   
   padding-top: 5%;
   padding-bottom: 20%;
-  
-/* previous settings of bg img desk */
-  /* padding-top: 40px;
-  padding-bottom: 270px; */
- 
 }
 
 
-/* Footer */
+/* FOOTER */
 footer {
   left: 0;
   bottom: 0;
